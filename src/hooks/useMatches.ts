@@ -1,5 +1,5 @@
 import { useLocalStorage } from './useLocalStorage'
-import { Match, Player } from '../types'
+import { Match } from '../types'
 
 export function useMatches() {
   const [matches, setMatches] = useLocalStorage<Match[]>('tennis-matches', [])
