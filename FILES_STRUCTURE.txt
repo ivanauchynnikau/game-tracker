@@ -1,0 +1,130 @@
+🎾 Tennis Match Tracker - Структура проекта
+═══════════════════════════════════════════════════
+
+📦 game-tracker/
+│
+├── 📄 Конфигурационные файлы
+│   ├── package.json              # Зависимости и скрипты
+│   ├── vite.config.ts            # Конфигурация Vite + PWA
+│   ├── tsconfig.json             # TypeScript конфигурация
+│   ├── tailwind.config.js        # Tailwind CSS настройки
+│   ├── postcss.config.js         # PostCSS настройки
+│   ├── .eslintrc.cjs             # ESLint правила
+│   ├── .gitignore                # Git ignore файлы
+│   ├── Dockerfile                # Docker образ
+│   ├── docker-compose.yml        # Docker Compose конфигурация
+│   ├── .dockerignore             # Docker ignore файлы
+│   └── nginx.conf                # Nginx конфигурация для продакшена
+│
+├── 📚 Документация
+│   ├── README.md                 # Основная документация
+│   ├── QUICKSTART.md            # ⚡ Быстрый старт
+│   ├── INSTALL.md                # Инструкции по установке
+│   ├── DEPLOY.md                 # 🚀 Деплой на хостинг
+│   ├── FAQ.md                    # ❓ Часто задаваемые вопросы
+│   ├── PROJECT_SUMMARY.md        # 📋 Сводка проекта
+│   ├── ARCHITECTURE.md           # 🏗️ Архитектура приложения
+│   └── FILES_STRUCTURE.txt       # Эта структура файлов
+│
+├── 🛠️ Скрипты
+│   └── start.sh                  # Скрипт автозапуска (исполняемый)
+│
+├── 🌐 HTML & Assets
+│   ├── index.html                # Главный HTML файл
+│   └── public/
+│       └── tennis-icon.svg       # Иконка приложения
+│
+└── 💻 Исходный код (src/)
+    │
+    ├── main.tsx                  # Точка входа приложения
+    ├── App.tsx                   # Главный компонент с роутером
+    ├── index.css                 # Глобальные стили
+    │
+    ├── 📄 pages/                 # Страницы приложения
+    │   ├── HomePage.tsx          # 🏠 Главная (списки матчей/игроков)
+    │   ├── RecordMatchPage.tsx   # 🎾 Запись матча с кортом
+    │   └── PlayerProfilePage.tsx # 👤 Профиль игрока со статистикой
+    │
+    ├── 🧩 components/            # React компоненты
+    │   ├── MatchList.tsx         # Список матчей с выбором
+    │   ├── PlayerList.tsx        # Список игроков с выбором
+    │   ├── TennisCourt.tsx       # SVG визуализация корта
+    │   ├── PlayerSelector.tsx    # Модальное окно выбора игроков
+    │   ├── PlayerForm.tsx        # Форма добавления игрока
+    │   └── Modal.tsx             # Универсальное модальное окно
+    │
+    ├── 🪝 hooks/                 # Custom React хуки
+    │   ├── useLocalStorage.ts    # Хук для работы с LocalStorage
+    │   ├── usePlayers.ts         # Управление игроками
+    │   └── useMatches.ts         # Управление матчами
+    │
+    ├── 🔧 utils/                 # Утилиты и хелперы
+    │   ├── exportImport.ts       # Импорт/экспорт данных (JSON)
+    │   └── stats.ts              # Расчёт статистики игроков
+    │
+    └── 📐 types/                 # TypeScript типы
+        └── index.ts              # Player, Match, Rally, Stats
+
+
+📊 Статистика проекта
+═════════════════════
+✅ Страниц: 3
+✅ Компонентов: 7
+✅ Хуков: 3
+✅ Утилит: 2
+✅ Типов: 5
+✅ Документов: 8
+✅ Общий размер: ~400 KB исходного кода
+
+
+🎯 Основные функции
+═══════════════════
+✅ Запись матчей в реальном времени
+✅ Визуализация теннисного корта (SVG)
+✅ Управление игроками
+✅ Статистика и аналитика
+✅ Импорт/Экспорт данных (JSON)
+✅ Генерация случайных матчей
+✅ PWA - работает офлайн
+✅ Устанавливается на устройства
+✅ Адаптивный дизайн (мобильный + desktop)
+✅ Хранение в LocalStorage
+
+
+🚀 Технологии
+═════════════
+⚛️  React 18
+📘 TypeScript
+⚡ Vite
+🎨 Tailwind CSS
+🧭 React Router
+📱 PWA (Vite PWA Plugin)
+🐳 Docker
+
+
+📱 Поддержка платформ
+═════════════════════
+✅ Android (Chrome, Firefox)
+✅ iOS (Safari)
+✅ Desktop (Chrome, Edge, Firefox)
+✅ Работает офлайн после первой загрузки
+
+
+🔥 Быстрый старт
+════════════════
+1. docker-compose up -d
+   ИЛИ
+2. npm install && npm run dev
+   ИЛИ
+3. ./start.sh
+
+Откройте: http://localhost:3000
+
+
+📄 Лицензия
+═══════════
+MIT License - свободное использование
+
+
+Создано: Март 2026
+Версия: 1.0.0
